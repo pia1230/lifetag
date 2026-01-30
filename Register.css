@@ -1,0 +1,235 @@
+/* ----------------------------------------------------
+   LIFETAG - Register.css (CLEAN + FINAL VERSION)
+   Theme: Lavender / Soft Purple / Glass UI
+---------------------------------------------------- */
+
+/* ----------- WRAPPER & CARD ----------- */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f6efff;
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 32px rgba(113, 44, 249, 0.12);
+  color: #111 !important;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #3d1b8c !important;
+  font-weight: 700;
+}
+
+/* ----------- FORM INPUTS ----------- */
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #3d1b8c !important;
+  margin-bottom: 6px;
+}
+
+.modern-input,
+select.modern-input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid #e0d7ff;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  color: #0f172a !important;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  -webkit-text-fill-color: #0f172a !important;
+  transition: 0.2s ease;
+}
+
+.modern-input:focus,
+select.modern-input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.25);
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(15, 23, 32, 0.45) !important;
+}
+
+/* ----------- ROLE SELECTOR ----------- */
+.role-selector {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+  width: 100%;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid rgba(124, 58, 237, 0.25);
+  background: rgba(255, 255, 255, 0.4);
+  color: #6b3be5;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+.role-btn-active {
+  background: linear-gradient(135deg, #8f6bff, #6b3be5) !important;
+  color: white !important;
+  border-color: #6b3be5 !important;
+  box-shadow: 0 4px 12px rgba(107, 59, 196, 0.25) !important;
+}
+
+/* ----------- TOGGLE SWITCH (original 2-option) ----------- */
+.form-toggle {
+  margin-bottom: 2rem;
+}
+
+/* ----------- FILE UPLOAD BUTTON ----------- */
+/* FINAL CLEAN VERSION */
+
+input[type="file"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  color: #2d1b69 !important;     /* filename text */
+  font-weight: 500 !important;
+}
+
+/* Normal state */
+input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::file-selector-button {
+  background-color: #d8c9ff !important;  /* light lavender */
+  color: #3b1f8a !important;             /* readable purple text */
+  font-weight: 600 !important;
+  padding: 10px 16px !important;
+  border-radius: 10px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: 0.25s ease !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Hover state */
+input[type="file"]::-webkit-file-upload-button:hover,
+input[type="file"]::file-selector-button:hover {
+  background-color: #bba3ff !important; /* darker lavender */
+  color: #ffffff !important;            /* white text */
+}
+
+/* ----------- SUBMIT BUTTON ----------- */
+/* Fixes the dark button + black text issue completely */
+
+.primary-button,
+.glossy-btn,
+button[type="submit"] {
+  background: linear-gradient(135deg,#8f6bff,#6b3be5) !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border: none !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  padding: 14px 20px !important;
+  width: 100%;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  box-shadow: 0 8px 22px rgba(107,59,196,0.22) !important;
+  transition: transform .18s ease, box-shadow .18s ease !important;
+}
+
+/* Hover */
+.primary-button:hover,
+.glossy-btn:hover,
+button[type="submit"]:hover {
+  background: linear-gradient(135deg,#7446ff,#5429c8) !important;
+  transform: translateY(-2px);
+  color: #ffffff !important;
+}
+
+/* Active */
+.primary-button:active,
+.glossy-btn:active,
+button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(84,41,200,0.18) !important;
+}
+
+/* Disabled */
+button[type="submit"]:disabled {
+  background: linear-gradient(135deg,#dcd6f8,#cfc8f6) !important;
+  cursor: not-allowed !important;
+  color: rgba(255,255,255,0.7) !important;
+  -webkit-text-fill-color: rgba(255,255,255,0.7) !important;
+  box-shadow: none !important;
+}
+
+/* ----------- ERROR MESSAGE ----------- */
+.error-message {
+  color: #b91c1c !important;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .register-card {
+    padding: 2rem;
+  }
+  label {
+    font-size: 1rem !important;
+  }
+}
+/* ----------- GOVERNMENT NOTICE ----------- */
+.gov-notice {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: #856404;
+}
+
+.gov-notice p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.gov-notice p:first-child {
+  font-weight: 700;
+  color: #b8941f;
+}
+
+/* Update role selector for 3 buttons */
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.8rem;
+  width: 100%;
+}
+
+.role-btn {
+  padding: 10px 8px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,62 @@
+.content-area {
+  flex-grow: 1;
+  margin-left: calc(260px + 2rem);
+  padding: 2.5rem;
+  box-sizing: border-box;
+
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 22px;
+
+  /* ⭐ Very light lavender background for maximum contrast */
+  background: linear-gradient(
+    135deg,
+    #faf7ff,
+    #f5eeff,
+    #efe3ff
+  );
+
+  /* Smooth frosted effect */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* Clean subtle border */
+  border: 1px solid rgba(139, 92, 246, 0.2);
+
+  /* Light purple shadow */
+  box-shadow:
+    0 10px 34px rgba(139, 92, 246, 0.15),
+    0 4px 12px rgba(139, 92, 246, 0.08);
+
+  color: #3b0764; /* dark lavender text */
+}
+.primary-button,
+.glossy-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+
+  /* ⭐ Deep royal purple (almost black-purple) */
+  background: linear-gradient(145deg, #2b044d, #1c0335);
+  color: #ffffff;
+  font-weight: 600;
+
+  /* Strong contrast shadow */
+  box-shadow:
+    0 8px 26px rgba(28, 3, 53, 0.5),
+    inset 0 2px 4px rgba(255,255,255,0.2);
+
+  border: none;
+  transition: 0.25s ease-in-out;
+}
+
+.primary-button:hover,
+.glossy-btn:hover {
+  background: linear-gradient(145deg, #8221e3, #a363e7);
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 36px rgba(28, 3, 53, 0.6),
+    inset 0 2px 5px rgba(255,255,255,0.25);
+}

@@ -1,0 +1,87 @@
+/* src/components/Home.css */
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.welcome-header {
+  /* This is our liquid glass header! */
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #620469;
+}
+
+.welcome-header p {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  color:#3b0764
+}
+
+.shortcut-grid-doctor{
+  display: grid;
+  /* This rule creates a FIXED 2-column grid for government panel */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.shortcut-grid-patient {
+  display: grid;
+  /* Updated to 3-column grid for 5 cards */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Admin Summary Cards */
+.admin-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, rgba(98, 4, 105, 0.08), rgba(79, 111, 232, 0.08));
+  border: 1px solid rgba(98, 4, 105, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(98, 4, 105, 0.08);
+}
+
+.summary-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #620469;
+  margin-bottom: 0.5rem;
+}
+
+.summary-label {
+  font-size: 0.9rem;
+  color: #3b0764;
+  font-weight: 600;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}

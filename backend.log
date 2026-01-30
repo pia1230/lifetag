@@ -1,0 +1,22 @@
+(node:69498) NOTE: The AWS SDK for JavaScript (v2) is in maintenance mode.
+ SDK releases are limited to address critical bug fixes and security issues only.
+
+Please migrate your code to use AWS SDK for JavaScript (v3).
+For more information, check the blog post at https://a.co/cUPnyil
+(Use `node --trace-warnings ...` to show where the warning was created)
+✅ Database connection successful!
+✅ Server running on http://localhost:8080
+Patient login attempt: { email: 'samiksha.pawar24+1@vit.edu', password: 'PAT@123' }
+User login successful: { id: 2, role: 'patient', patientTagId: 653699167 }
+Doctor login attempt: { email: 'samiksha.pawar24+1@vit.edu', password: 'PAT@123' }
+Doctor not found: samiksha.pawar24+1@vit.edu
+Doctor login attempt: { email: 'samiksha.pawar24+2@vit.edu', password: 'DOC@123' }
+Doctor login successful: { id: 2, email: 'samiksha.pawar24+2@vit.edu' }
+Patient login attempt: { email: 'samiksha.pawar24+3@vit.edu', password: 'GOV@123' }
+User login successful: { id: 1, role: 'admin', patientTagId: 999999999 }
+Patient login attempt: { email: 'samiksha.pawar24+3@vit.edu', password: 'GOV@123' }
+User login successful: { id: 1, role: 'admin', patientTagId: 999999999 }
+Doctor login attempt: { email: 'samiksha.pawar24+2@vit.edu', password: 'DOC@123' }
+Doctor login successful: { id: 2, email: 'samiksha.pawar24+2@vit.edu' }
+Patient login attempt: { email: 'samiksha.pawar24+1@vit.edu', password: 'PAT@123' }
+User login successful: { id: 2, role: 'patient', patientTagId: 653699167 }

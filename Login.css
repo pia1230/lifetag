@@ -1,0 +1,113 @@
+/* Lavender background */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f6f0ff 0%, #efe6ff 100%);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Glass card */
+.login-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 2rem 2.3rem;
+  border-radius: 1.2rem;
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(99, 63, 153, 0.18);
+  text-align: left;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+  color: #4c1d95;
+}
+
+/* Role Selector - 3 buttons */
+.role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.role-btn {
+  padding: 14px 10px;
+  border-radius: 12px;
+  border: 2px solid rgba(124, 58, 237, 0.3);
+  background: white;
+  color: #7c3aed;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.1);
+}
+
+.role-btn:hover {
+  background: rgba(124, 58, 237, 0.05);
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+.role-btn-active {
+  background: linear-gradient(145deg, #7c3aed, #6d28d9);
+  color: white;
+  border-color: #7c3aed;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+/* Input fields */
+.modern-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 2px solid rgba(124, 58, 237, 0.2);
+  background: rgba(255,255,255,0.6);
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+.modern-input:focus {
+  border-color: #7c3aed;
+  background: white;
+}
+
+/* Glossy Purple Button */
+.glossy-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #5b21b6, #4c1d95);
+  color: white;
+  font-weight: 600;
+  box-shadow:
+    0 8px 24px rgba(76,29,149,0.35),
+    inset 0 2px 4px rgba(255,255,255,0.3);
+  transition: 0.25s ease-in-out;
+}
+
+.glossy-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(145deg, #4c1d95, #3b157a);
+}
+
+/* Footer */
+.footer-text {
+  text-align: center;
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+}
+.footer-text a {
+  color: #6d28d9;
+}
+.error-message {
+  color: red;
+  margin-bottom: 0.8rem;
+}
